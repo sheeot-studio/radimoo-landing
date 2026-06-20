@@ -627,6 +627,12 @@ h3 {
   text-align: center;
 }
 
+.scenario-grid .scenario-more {
+  border-style: dashed;
+  background: rgba(221, 243, 232, 0.56);
+  color: var(--muted);
+}
+
 .waitlist-copy {
   display: grid;
   gap: 22px;
