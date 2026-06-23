@@ -311,12 +311,17 @@ h3 {
   margin-left: clamp(0px, 7vw, 76px);
 }
 
+.demo-phone-frame {
+  width: min(280px, 72vw);
+  margin-left: clamp(0px, 5vw, 56px);
+}
+
 .phone-frame-side {
   position: absolute;
-  right: 4px;
-  bottom: 16px;
+  right: 0;
+  bottom: 8px;
   z-index: 1;
-  width: 230px;
+  width: 210px;
   opacity: 0.92;
   transform: rotate(5deg);
 }
@@ -795,6 +800,10 @@ h3 {
     margin-inline: auto;
   }
 
+  .demo-phone-frame {
+    width: min(280px, 74vw);
+  }
+
   .phone-frame-side {
     display: none;
   }
@@ -833,6 +842,10 @@ h3 {
 
   .phone-frame-main {
     width: min(320px, 100%);
+  }
+
+  .demo-phone-frame {
+    width: min(270px, 82vw);
   }
 
   .phone-screen {
