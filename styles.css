@@ -332,6 +332,19 @@ h3 {
   color: var(--ink);
 }
 
+.demo-video-screen {
+  min-height: 0;
+  padding: 0;
+  background: #10191b;
+}
+
+.demo-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
+}
+
 .phone-status,
 .app-header {
   display: flex;
@@ -775,7 +788,7 @@ h3 {
   }
 
   .phone-stage {
-    min-height: 510px;
+    min-height: auto;
   }
 
   .phone-frame-main {
@@ -824,6 +837,10 @@ h3 {
 
   .phone-screen {
     min-height: 520px;
+  }
+
+  .demo-video-screen {
+    min-height: 0;
   }
 
   .signup-fields {
