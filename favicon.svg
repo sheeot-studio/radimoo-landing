@@ -1,5 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#fff4e8"/>
-  <rect x="8" y="8" width="48" height="48" rx="10" fill="#fffdf1" stroke="#e85d7a" stroke-width="3"/>
-  <text x="32" y="39" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900" fill="#263238">rm</text>
+  <!--
+    radimoo lamp mark — from the Figma "Radimoo v2" app-icon frames.
+    The prefers-color-scheme block swaps to the dark variant when the
+    visitor's browser is in dark mode (favicons don't inherit page CSS,
+    but styles inside the SVG itself do apply).
+  -->
+  <style>
+    .bg { fill: #FDFDFA; }
+    .fg { fill: #222222; }
+    .fg-stroke { stroke: #222222; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #222222; }
+      .fg { fill: #FDFDFA; }
+      .fg-stroke { stroke: #FDFDFA; }
+    }
+  </style>
+  <clipPath id="frame">
+    <rect width="64" height="64" rx="14"/>
+  </clipPath>
+  <g clip-path="url(#frame)">
+    <rect class="bg" width="64" height="64" rx="14"/>
+    <path class="fg" opacity="0.1" d="M52 67L45.1429 41.8438H18.8571L12 67H52Z"/>
+    <path class="fg" d="M26.1177 41.8438C26.7136 44.3465 29.1233 46.2188 32 46.2188C34.8767 46.2188 37.2921 44.3465 37.8824 41.8438"/>
+    <path class="fg-stroke" fill="none" d="M37.2234 25.4375L47.294 41.8438H16.7058L26.7765 25.4375H37.2234Z" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="fg-stroke" fill="none" d="M36.706 25.4375V19.9688H27.2942V25.4375" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="fg-stroke" fill="none" d="M32 19.9688V-3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
 </svg>
