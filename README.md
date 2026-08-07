@@ -12,4 +12,4 @@ The landing page introduces radimoo, previews the practice experience, and links
 
 ## Status
 
-radimoo is currently in early development.
+radimoo is currently in early development. 
